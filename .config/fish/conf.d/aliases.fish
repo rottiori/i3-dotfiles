@@ -7,7 +7,7 @@ alias ...="cd ../.."
 alias u="sudo pacman -Syu"
 alias i="sudo pacman -S "
 alias r="sudo pacman -Rns"
-
+alias y='yay -Syu'
 # Clean cache and orphaned packages
 function clean
     if pacman -Qtdq > /dev/null
