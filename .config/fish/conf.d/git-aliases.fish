@@ -1,0 +1,11 @@
+# Git aliases
+alias gs="git status"
+alias ga="git add ."
+alias gp="git push -u origin main"
+alias gl="git log --oneline --graph --all"
+alias gpl="git pull"
+alias gc="git commit -m"
+alias gcl="git clone"
+alias gsh="git show"
+alias gd="git diff"
+alias gds="git diff --staged"

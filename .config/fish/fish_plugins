@@ -1,0 +1,7 @@
+# List of plugins used with Fisher
+fisher add jorgebucaran/fisher       # Plugin manager for Fish shell
+fisher add jethrokuan/z              # Fast directory navigation
+fisher add ilancosman/tide           # Modern and customizable prompt
+fisher add franciscolourenco/done    # Visual notifications for finished commands
+fisher add patrickf1/fzf.fish        # fzf integration for Fish shell
+
