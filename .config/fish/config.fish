@@ -7,6 +7,9 @@ if type -q pfetch
    pfetch
 end
 
+set -g tide_git_icon ''
+set -g tide_git_branch_icon ''
+
 # This file contains only configurations specific to interactive sessions.
 # The rest of the configuration is divided into modules in:
 # ~/.config/fish/conf.d/
