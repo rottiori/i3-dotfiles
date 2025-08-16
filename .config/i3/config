@@ -1,7 +1,4 @@
-#Install font: ttf-firacode-nerd
 #Install font: JetBrainsMono
-
-#font pango:FiraCode Nerd Font 5
 font pango: JetBrainsMono Nerd Font 11
 
 # set the mod key to the winkey:
@@ -337,7 +334,8 @@ exec --no-startup-id dex --autostart --environment i3
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
 exec --no-startup-id ~/.screenlayout/monitor.sh
 
-# set wallpaper
+# The wallpaper must be located at this path.
+# You can replace the image with another file in the same location or change the path as needed.
 exec --no-startup-id sleep 1 && feh --bg-fill /usr/share/endeavouros/backgrounds/1078854.png
 
 # set powersavings for display:
