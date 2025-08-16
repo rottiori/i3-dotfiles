@@ -305,6 +305,7 @@ for_window [class=Godot] move container to workspace $ws5; workspace $ws5
 for_window [class="renpy"] move to workspace $ws5
 for_window [class="renpy"] focus
 for_window [class=discord] focus
+for_window [class="KeePassXC"] floating enable
 
 ##############
 # compositor #
