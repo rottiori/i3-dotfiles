@@ -11,6 +11,9 @@ set $mod Mod4
 # default i3 tiling mode:
 workspace_layout default
 
+# autotiling
+exec --no-startup-id autotiling
+
 ##############################
 # extra options for windows: #
 ##############################
