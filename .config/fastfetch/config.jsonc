@@ -1,0 +1,85 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"source": "~/.config/fastfetch/assets/logo.png",
+		"type": "kitty",
+		"height": 12,
+		"width": 21,
+		"padding": {
+			"top":4,
+			"left":2,
+			"right":2,
+		}
+	},
+    "display": {
+        "separator": "󰑃 "
+    },
+    "modules": [
+    "break",
+    "break",
+    "break",    {
+        "type": "title",
+        "keyWidth": 10,
+        "color": {
+            "user": "#C9DC35",
+            "at": "#B1EB8B",
+            "host": "#95CDC8"
+        }
+    },
+    "break",
+        {
+            "type": "os",
+            "key": " ┃ ",
+            "keyColor": "#9D8EFB",
+        },
+        {
+            "type": "kernel",
+            "key": " ┃ ",
+            "keyColor": "#EE4E2E",
+        },
+	{
+            "type": "wm",
+            "key": " ┃ ",
+            "keyColor": "#2D5751",
+        },
+        {
+            "type": "terminal",
+            "key": "󰄛 ┃ ",
+            "keyColor": "#91F845",
+        },
+        {
+            "type": "shell",
+            "key": " ┃ ",
+            "keyColor": "#2A61AD",
+        },
+        {
+            "type": "packages",
+            "key": " ┃ ",
+            "keyColor": "#782739",
+        },
+        {
+            "type": "terminalfont",
+            "key": " ┃ ",
+            "keyColor": "#cb6634",
+        },
+        {
+            "type": "cursor",
+            "key": " ┃ ",
+            "keyColor": "#F7DB76",
+        },
+        {
+            "type": "uptime",
+            "key": "󱦟 ┃ ",
+            "keyColor": "#4DA696",
+        },
+        {
+            "type": "custom",
+            "key": " ┃ ",
+            "format": "rottioris",
+            "keyColor": "29",
+        },
+        "break",
+        "break",
+        "break",
+    ]
+}
