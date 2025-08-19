@@ -25,9 +25,10 @@ exec --no-startup-id autotiling
 
 #border indicator on windows:
 new_window pixel 3
+new_float none
 
 # thin borders
-hide_edge_borders both
+ hide_edge_borders both
 
 # Set inner/outer gaps
 gaps inner 4
@@ -311,6 +312,11 @@ for_window [class="renpy"] move to workspace $ws5
 for_window [class="renpy"] focus
 for_window [class=discord] focus
 for_window [class="KeePassXC"] floating enable
+
+# nmtui wifi
+for_window [class="nmtui_popup"] floating enable
+for_window [class="nmtui_popup"] resize set 800 500
+for_window [class="nmtui_popup"] move position center
 
 ##############
 # compositor #
