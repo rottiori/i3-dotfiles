@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Detectar interfaz WiFi
+INTERFACE=$(nmcli device status | awk '$2=="wifi"{print $1; exit}')
+
+# Si no hay interfaz wifi
+if [ -z "$INTERFACE" ]; then
+    echo "󱚼 No WiFi"
+    exit 0
+fi
+
+# Click izquierdo abre nmtui en Kitty personalizado
+if [ "$BLOCK_BUTTON" -eq 1 ]; then
+    kitty --class=nmtui_popup -o remember_window_size=no -o initial_window_width=80c -o initial_window_height=24c nmtui
+fi
+
+# Obtener estado (en texto)
+STATE=$(nmcli device status | awk -v dev="$INTERFACE" '$1==dev {print $3}')
+
+case "$STATE" in
+    "desconectado")
+        echo "󱚼  Desconectado"
+        ;;
+    "conectando")
+        echo "󱛇  Conectando..."
+        ;;
+    "conectado")
+        # Verificar si tiene internet
+        if ping -q -c 1 -W 1 8.8.8.8 >/dev/null; then
+            SSID=$(nmcli -t -f GENERAL.CONNECTION device show "$INTERFACE" | cut -d: -f2-)
+            SIGNAL=$(nmcli -t -f ACTIVE,SIGNAL dev wifi | grep '^yes' | cut -d: -f2)
+            echo "󰖩 "
+        else
+            echo "󱚵  Sin Internet"
+        fi
+        ;;
+    *)
+        echo "󱚼  Estado desconocido"
+        ;;
+esac
+
