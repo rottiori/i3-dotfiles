@@ -1,0 +1,16 @@
+ncmpcpp_directory = "~/.config/ncmpcpp"
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "/home/ori/Música"
+
+# Interfaz
+visualizer_in_stereo = "yes"
+visualizer_type = "wave" # (wave, spectrum, ellipse)
+visualizer_look = "+|"
+visualizer_color = "cyan, blue, magenta, red, yellow"
+
+# Opciones útiles
+mouse_support = "yes"
+enable_window_title = "yes"
+progressbar_look = "=>-"
+song_list_format = "{$8%a $9- $2%t $R$5%b}"
