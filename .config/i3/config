@@ -326,8 +326,9 @@ for_window [class="nmtui_popup"] move position center
 # start using default config 
 # exec_always --no-startup-id picom -b
 # for custom config:
-exec_always --no-startup-id picom --config  ~/.config/picom.conf
+# exec_always --no-startup-id picom --config  ~/.config/picom.conf
 # exec_always --no-startup-id bash -c "pkill picom; sleep 1; picom --config ~/.config/picom.conf"
+exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 #############################################
 # autostart applications/services on login: #
